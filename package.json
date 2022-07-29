@@ -1,0 +1,32 @@
+{
+  "name": "react-pancake",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle --jsx React.createElement watch",
+    "ts": "tsc"
+  },
+  "keywords": [],
+  "author": "Dusan Jovanov",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.0.0",
+    "microbundle": "^0.15.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "typescript": "^4.7.4"
+  },
+  "source": "src/index.tsx",
+  "exports": "./dist/index.modern.js",
+  "module": "./dist/index.module.js",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "use-resize-observer": "^9.0.2",
+    "yootils": "^0.3.1"
+  }
+}
