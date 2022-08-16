@@ -18,5 +18,8 @@
   "resolutions": {
     "react": "../node_modules/react",
     "react-dom": "../node_modules/react-dom"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1"
   }
 }

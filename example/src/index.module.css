@@ -1,0 +1,19 @@
+.root {
+  font-family: system-ui;
+  padding: 0 2rem;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding-bottom: 100rem;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.subHeading {
+  color: #aaa;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: normal;
+}

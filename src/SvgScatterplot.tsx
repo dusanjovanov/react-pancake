@@ -1,5 +1,6 @@
 import React from "react";
 import { useChartContext } from "./Chart";
+import { defaultX, defaultY } from "./utils/accessors";
 
 type SvgScaterplotProps<D> = {
   data: D[];
@@ -7,9 +8,6 @@ type SvgScaterplotProps<D> = {
   y: (d: D, index: number) => number;
   children: (d: string) => React.ReactNode;
 };
-
-const defaultX = (d: any) => d?.x;
-const defaultY = (d: any) => d?.y;
 
 export const SvgScatterplot = <D,>({
   data,

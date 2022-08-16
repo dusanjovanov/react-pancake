@@ -4,17 +4,15 @@ import { getTicks } from "./utils/ticks";
 import clsx from "clsx";
 import styles from "./styles/Grid.module.css";
 
-type GridPropsChild = (args: {
-  value: any;
-  isFirst: boolean;
-  isLast: boolean;
-}) => React.ReactNode;
-
 type GridProps = {
-  ticks?: any[];
+  ticks?: number[];
   count: number;
   orientation?: "vertical" | "horizontal";
-  children: GridPropsChild;
+  children: (args: {
+    value: number;
+    isFirst: boolean;
+    isLast: boolean;
+  }) => React.ReactNode;
 };
 
 export const Grid = ({
